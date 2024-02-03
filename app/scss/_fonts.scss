@@ -12,4 +12,7 @@
 
 @include font('BoldCondensed', normal, 700, '../fonts/HelveticaNeueBoldCondensed.woff2');
 @include font('BlackCondensed', normal, normal, '../fonts/HelveticaNeueBlackCondensed.woff2');
-@include font('Roman', normal, normal, '../fonts/HelveticaNeueCyr-Roman.woff2');
+@include font('Roman', normal, 400, '../fonts/HelveticaNeueCyr-Roman.woff2');
+@include font('Roman', normal, 300, '../fonts/HelveticaNeueCyr-Light.woff2');
+@include font('Roman', normal, 200, '../fonts/HelveticaNeueCyr-Thin.woff2');
+@include font('Roman', normal, 100, '../fonts/HelveticaNeueCyr-UltraLight.woff2');
