@@ -1,4 +1,4 @@
-/* @mixin font($fname, $fstyle, $fweight, $furl) {
+@mixin font($fname, $fstyle, $fweight, $furl) {
 	@font-face {
 		font-family: $fname;
 		font-style: $fstyle;
@@ -10,4 +10,6 @@
 }
 
 
-@include font('Font', normal, normal, '../fonts/Font/Font.woff2'); */
+@include font('BoldCondensed', normal, 700, '../fonts/HelveticaNeueBoldCondensed.woff2');
+@include font('BlackCondensed', normal, normal, '../fonts/HelveticaNeueBlackCondensed.woff2');
+@include font('Roman', normal, normal, '../fonts/HelveticaNeueCyr-Roman.woff2');
