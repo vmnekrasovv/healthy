@@ -33,4 +33,17 @@ body.lock {
 	will-change: transform;
 } */
 
+.page {
+	font-family: 'Roman';
+	color: #fff;
+	background-color: #1a1919;
+}
+
+.container {
+	/* max-width: 1100px; */
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 @import 'header/header';
+@import 'sections/about';

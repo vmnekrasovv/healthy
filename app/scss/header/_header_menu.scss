@@ -27,9 +27,16 @@
 
 	&__link {
 		padding: 10px;
-		font-size: 15px;
-		color: #171717;
+		font-size: 16px;
+		font-family: 'BoldCondensed';
+		color: #fff;
 		text-decoration: none;
+		transition: .33s;
+		letter-spacing: 1px;
+
+		&:hover {
+			color: #6dc734;
+		}
 
 		@media screen and (max-width: 767px) {
 			color: #fff;
@@ -50,7 +57,7 @@
 		}
 
 		&.active {
-			color: #C9A96E;
+			color: #6dc734;
 		}
 	}
 }
