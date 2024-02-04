@@ -1,0 +1,122 @@
+.dishes {
+	
+	&-list {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+		flex-wrap: wrap;
+		margin-bottom: 120px;
+
+		&__item {
+			width: 350px;
+			background-color: #252525;
+			border-radius: 7.7px;
+			cursor: pointer;
+		}
+
+		&__image {
+			display: block;
+			border-radius: 7.7px 7.7px 0 0;
+			width: 100%;
+			height: 260px;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		&__content {
+			padding: 30px;
+		}
+
+		&__title {
+			color: #d9d9d9;
+			font-weight: 400;
+			font-size: 32px;
+			line-height: 30px;
+			margin-bottom: 5px;
+		}
+
+		&__desc {
+			color: #A4A8B2;
+			font-weight: 300;
+			font-size: 13px;
+			line-height: 16px;
+			letter-spacing: 0.7px;
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			color: #85878C;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 18px;
+			margin-bottom: 30px;
+			letter-spacing: 0.5px;
+		}
+
+		&__order {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__stars {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__star {
+			width: 20px;
+			height: 19px;
+			margin-right: 5px;
+
+			&.star-full {
+				background: url('../images/dest/icons/star_full.svg') no-repeat;
+			}
+
+			&.star-half {
+				background: url('../images/dest/icons/star_half.svg') no-repeat;
+			}
+
+			&.star-void {
+				background: url('../images/dest/icons/star_void.svg') no-repeat;
+			}
+		} // star
+
+		&__count {
+			display: inline-block;
+			margin-left: 10px;
+			color: #B3B3B3;
+			font-family: 'BlackCondensed';
+			font-size: 12px;
+			line-height: 30px;
+			letter-spacing: 1.5px;
+		}
+
+		&__button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100px;
+			height: 40px;
+			padding-left: 3px;
+			background-color: $color_green;
+			transition: .33s;
+			border-radius: 100px;
+			text-decoration: none;
+			font-family: 'Arial';
+			font-size: 11px;
+			text-transform: uppercase;
+			color: #252525;
+			letter-spacing: 1.3px;
+			font-weight: 700;
+			border: 1px solid #286203;
+
+			&:hover {
+				box-shadow: 0 0 3px 0 #c0e300;
+		    	background-color: #8fdf25;
+		    	border: 1px solid #c0e300;
+			}
+		}
+	}
+}
