@@ -11,6 +11,29 @@
 		letter-spacing: 20px;
 		text-transform: uppercase;
 		text-align: center;
+
+		&.title-underline {
+
+			margin-bottom: 70px;
+
+			&::after {
+				display: block;
+				content: '';
+				width: 60px;
+				height: 2px; 
+				position: absolute;
+				bottom: -10px;
+				left: calc(50% - 30px);
+				background-color: #6dc734;
+			}
+
+			.section__sub-title {
+				font-size: 36px;
+				top: calc(50% - 22px);
+				letter-spacing: 7px;
+				left: -7px;
+			}
+		}
 	}
 
 	&__sub-title {
@@ -37,3 +60,4 @@
 }
 
 @import 'about';
+@import 'work';
