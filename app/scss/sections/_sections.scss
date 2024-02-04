@@ -1,0 +1,39 @@
+
+.section {
+
+	&__title {
+		position: relative;
+		margin-bottom: 40px;
+
+		color: #303030;
+		font-family: 'BlackCondensed';
+		font-size: 100px;
+		letter-spacing: 20px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__sub-title {
+		width: 100%;
+		position: absolute;
+		top: calc(50% - 15px);
+		left: 0;
+		font-family: 'Roman';
+		font-weight: 400;
+		font-size: 30px;
+		letter-spacing: 5.7px;
+		color: #D9D9D9;
+		text-transform: none;
+	}
+
+	&__text {
+		color: #A6A6A6;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 90px;
+	}
+}
+
+@import 'about';
