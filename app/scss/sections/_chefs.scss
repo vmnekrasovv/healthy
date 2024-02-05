@@ -1,0 +1,62 @@
+.chefs {
+	
+	&-list {
+		display: flex;
+		gap: 30px;
+
+		margin-bottom: 120px;
+	
+		&__item {
+			width: 33.333%;
+		}
+
+		&__details {
+			display: flex;
+			gap: 25px;
+			margin-bottom: 25px;
+			align-items: center;
+		}
+
+		&__photo {
+			display: block;
+			padding: 2px;
+			background-color: #222;
+			width: 71px;
+			height: 71px;
+			border-radius: 71px;
+			border: 2px solid $color_green_l;
+		}
+
+		&__desc {
+			display: flex;
+			flex-direction: column;
+			gap: 7px;
+		}
+
+		&__name {
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: .5px;
+		}
+
+		&__position {
+			font-weight: 300;
+			font-size: 13px;
+			line-height: 16px;
+			color: #ccc;
+			letter-spacing: .3px;
+		}
+
+		&__slider {
+			display: flex;
+			gap: 30px;
+		}
+
+		&__slide {
+			&-image {
+				display: block;
+				border-radius: 3px;
+			}
+		}
+	}
+}
