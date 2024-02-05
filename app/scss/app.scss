@@ -37,6 +37,7 @@ $color_green: #6dc734;
 } */
 
 .page {
+	min-width: 1900px;
 	font-family: 'Roman';
 	color: #fff;
 	background-color: #1a1919;
@@ -50,7 +51,19 @@ $color_green: #6dc734;
 	margin: 0 auto;
 }
 
+.logo {
+	width: 207px;
+	height: 24px;
+	background: url('../images/dest/logo.svg') no-repeat;
+
+	&:hover {
+		background: url('../images/dest/logo_active.svg') no-repeat;		
+	}
+}
+
 @import 'slick.css';
 
 @import 'header/header';
 @import 'sections/sections';
+
+@import 'footer';

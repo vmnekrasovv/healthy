@@ -8,12 +8,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-
-		.logo {
-			width: 207px;
-			height: 24px;
-			background: url('../images/dest/logo.svg') no-repeat;
-		}
 	}
 
 	&__content {
@@ -72,51 +66,7 @@
 		}
 	}
 
-	.contacts {
-		display: flex;
-		/* padding: 0 100px; */
-
-		&__item {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			width: 33.333%;
-		}
-
-		&__icon {
-			width: 26px;
-			height: 26px;
-			margin-bottom: 12px;
-			text-align: center;
-
-			&.hours {
-				background: url('../images/dest/icons/hours.svg') no-repeat;
-			}
-
-			&.directions {
-				background: url('../images/dest/icons/directions.svg') no-repeat;
-			}
-
-			&.call {
-				background: url('../images/dest/icons/call.svg') no-repeat;
-			}
-		}
-
-		&__content {
-			font-size: 16px;
-			margin-bottom: 10px;
-			text-shadow: 1px 1px #000;
-		}
-
-		&__desc {
-			font-size: 14px;
-			font-weight: 100;
-			letter-spacing: 2px;
-			text-shadow: 1px 1px #000;
-		}
-
-	}
+	@import '../contacts';
 }
 
 @import 'burger';
