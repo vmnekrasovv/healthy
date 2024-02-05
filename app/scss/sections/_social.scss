@@ -1,0 +1,126 @@
+.social {
+
+	&-list {
+		display: flex;
+		gap: 30px;
+		margin-bottom: 120px;
+	
+		&__item {
+			width: 33.333%;
+			height: 330px;
+			background-color: #262626;
+			border-radius: 8px;
+		}
+
+		&__top {
+			height: 90px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 25px;
+			border-bottom: 2px solid #303030;
+		}
+
+		&__icon {
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			padding-left: 57px;
+			position: relative;
+			border-radius: 40px;
+			transition: .33s;
+
+			font-weight: 300;
+			font-size: 14px;
+			color: #BFBFBF;
+
+			&.social-twitter, &.social-instagram, &.social-facebook {
+				background-position: center top;
+				background-size: cover;
+			}
+
+			&.social-twitter {
+				background: url('../images/dest/icons/twitter.svg') no-repeat;
+			}
+
+			&.social-instagram {
+				background: url('../images/dest/icons/instagram.svg') no-repeat;
+			}
+
+			&.social-facebook {
+				background: url('../images/dest/icons/facebook.svg') no-repeat;
+			}
+		} // icon
+
+		&__button {
+			display: inline-block;
+			padding: 12px 18px 14px 22px;
+			text-decoration: none;
+			color: #737373;
+			font-family: 'BlackCondensed';
+			font-size: 10px;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			border: 2px solid #303030;
+			border-radius: 40px;
+			transition: .33s;
+
+			&:hover {
+				color: #fff;
+				border-color: $color_green_l;
+			}
+		} // button
+
+		&__content {
+			padding: 20px 30px;
+			height: 240px;
+		} 
+
+		&__date {
+			color: #737373;
+			font-size: 14px;
+			line-height: 30px;
+			margin-bottom: 10px;
+		}
+
+		&__text {
+			font-size: 14px;
+			color: #bbb;
+			line-height: 25px;
+			margin-bottom: 20px;
+		}
+
+		&__author {
+			font-size: 14px;
+			line-height: 30px;
+			color: $color_green;
+			transition: .33s;
+
+			&:hover {
+				cursor: pointer;
+				color: $color_green_l;
+			}
+		} // author
+
+		&__image {
+			width: 90%;
+			height: 90%;
+			margin: 3% auto 2%;
+			border: 2px solid #3c3c3c;
+			cursor: pointer;
+			transition: .33s;
+
+			&:hover {
+				border-color: $color_green_l;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
