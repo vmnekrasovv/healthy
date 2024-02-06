@@ -1,0 +1,117 @@
+.header {
+
+	@media screen and (max-width: 768px) {
+		background-position-x: 12%; 
+	}
+
+	@media screen and (max-width: 576px) {
+		background-position-x: 20%; 
+	}
+
+	@media screen and (max-width: 480px) {
+		background-position-x: 25%; 
+	}
+
+	.navbar {
+
+		@media screen and (min-width: 769px) and (max-width: 1200px) {
+			padding: 0 10px;
+		}
+	}
+
+	&__content {
+
+		@media screen and (max-width: 1600px) {
+			padding-top: 100px;
+		}
+
+		@media screen and (max-width: 576px) {
+			padding-top: 50px;
+		}
+
+		@media screen and (max-width: 375px) {
+			padding-top: 30px;
+		}
+
+		@media screen and (min-width: 577px) and (max-width: 592px) {
+			padding-top: 50px;
+		}
+
+		@media screen and (min-width: 593px) and (max-width: 768px) {
+			padding-top: 70px;
+		}
+
+
+	}
+	
+	&__title {
+
+		@media screen and (max-width: 1200px) {
+    		font-size: 62px;
+    	}
+
+    	@media screen and (max-width: 900px) {
+    		font-size: 52px;
+    	}
+
+    	@media screen and (max-width: 768px) {
+    		font-size: 45px;
+    		padding: 25px 10px;
+    	}
+
+    	@media screen and (max-width: 576px) {
+    		font-size: 50px;
+    		padding: 25px 10px;
+    	}
+
+// min-width 
+
+    	@media screen and (min-width: 480px) and (max-width: 576px) {
+    		padding: 25px 14%;
+    		margin: 0 auto 25px;
+    	}
+
+    	@media screen and (min-width: 376px) and (max-width: 479px) {
+    		padding: 25px 7%;
+    		margin: 0 auto 25px;
+    	}
+
+	}
+
+	&__text {
+
+
+		@media screen and (max-width: 1200px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+
+		@media screen and (max-width: 900px) {
+			max-width: 65%;
+    	}
+
+    	@media screen and (max-width: 768px) {
+    		max-width: 75%;
+    	}
+
+    	@media screen and (max-width: 576px) {
+    		font-size: 12px;
+			line-height: 19px;
+    	}
+	}
+
+
+	&__button {
+
+		@media screen and (max-width: 1600px) {
+			margin-bottom: 80px;
+		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 140px;
+		}
+
+	}
+
+} // header

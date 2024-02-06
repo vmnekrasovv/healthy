@@ -2,6 +2,7 @@
 	min-height: 150vh;
 	background: url('../images/dest/header.jpg') no-repeat;
 	background-size: cover;
+	background-position-y: -5px; 
 
 	.navbar {
 		height: 90px;
@@ -11,7 +12,6 @@
 	}
 
 	&__content {
-		/* padding-top: 80px; */
 		padding-top: 120px;
 		text-align: center;
 	}
@@ -32,6 +32,8 @@
 	}
 
 	&__text {
+		max-width: 650px;
+		margin: 0 auto 40px;
 		font-size: 16px;
 		line-height: 22px;
 		letter-spacing: 2px;
@@ -71,3 +73,4 @@
 
 @import 'burger';
 @import 'header_menu';
+@import 'header_media';
