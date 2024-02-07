@@ -11,7 +11,31 @@
 			prevArrow: "<div class='about-slider__arrow prev'></div>",
 			nextArrow: "<div class='about-slider__arrow next'></div>",
 			responsive: [
-		
+				
+				{
+				  breakpoint: 990,
+				  settings: {
+				    arrows: false
+				  }
+				},
+
+				{
+				  breakpoint: 768,
+				  settings: {
+				    slidesToShow: 1,
+				    arrows: true
+				  }
+				},
+
+				{
+				  breakpoint: 600,
+				  settings: {
+				  	slidesToShow: 1,
+				    arrows: false
+				  }
+				}
+
+
 				/*{
 				  breakpoint: 768,
 				  settings: {

@@ -68,14 +68,14 @@ $color_green: #6dc734;
 @import 'slick.css';
 
 @import 'header/header';
-/* @import 'sections/sections';
+@import 'sections/sections';
 
-@import 'footer'; */
+@import 'footer';
 
 .section {
 	display: none;
 }
 
-.footer {
-	display: none;
+.section.about {
+	display: block;
 }

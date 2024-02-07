@@ -1,20 +1,29 @@
 .about {
 
-	margin-bottom: 70px;
+	margin-bottom: 120px;
 
 	.container {
 		padding: 100px 50px;
-		margin-top: -400px;
+		margin-top: -320px;
+
 		min-height: 750px;
 		border-radius: 5px;
 		background-color: #252525;
+
+		@media screen and (max-width: 576px) {
+			padding: 50px 20px;
+		}
 	}
 
 	&-slider {
 		position: relative;
-		width: 760px;
-		height: 270px;
+		max-width: 760px;
+		min-height: 270px;
 		margin: 0 auto;
+
+		@media screen and (max-width: 768px) {
+			max-width: 400px;
+		}
 
 		display: flex;
 		justify-content: space-between;
@@ -62,11 +71,35 @@
 
 			&.prev {
 				left: -125px;
+
+				@media screen and (max-width: 1200px) {
+					left: -15%;
+				}
+
+				@media screen and (max-width: 1100px) {
+					left: -12%;
+				}
+
+				@media screen and (max-width: 768px) {
+					left: -20%;
+				}
 			}
 
 			&.next {
 				right: -125px;
 				transform: rotate(180deg);
+
+				@media screen and (max-width: 1200px) {
+					right: -15%;
+				}
+
+				@media screen and (max-width: 1200px) {
+					right: -12%;
+				}
+
+				@media screen and (max-width: 768px) {
+					right: -20%;
+				}
 			}
 		}
 	}
