@@ -8,7 +8,7 @@
 		margin-bottom: 120px;
 
 		&__item {
-			width: 350px;
+			max-width: 350px;
 			background-color: #252525;
 			border-radius: 7.7px;
 			cursor: pointer;
@@ -25,6 +25,10 @@
 
 		&__content {
 			padding: 30px;
+
+			@media screen and (max-width: 376px) {
+				padding: 30px 20px;
+			}
 		}
 
 		&__title {
@@ -117,6 +121,10 @@
 				box-shadow: 0 0 3px 0 #c0e300;
 		    	background-color: #8fdf25;
 		    	border: 1px solid #c0e300;
+			}
+
+			@media screen and (max-width: 376px) {
+				width: 70px
 			}
 		}
 	}
