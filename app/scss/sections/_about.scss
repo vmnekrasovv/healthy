@@ -30,6 +30,13 @@
 		flex-wrap: wrap;
 		gap: 40px;
 
+		.slick-track {
+
+			@media screen and (max-width: 420px) {
+				height: 100%;
+			}
+		}
+
 		&__item {
 			cursor: pointer;
 		}
@@ -37,6 +44,11 @@
 		&__image {
 			width: 100%;
 			padding: 0 15px;
+
+			@media screen and (max-width: 420px) {
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 
 		&__arrow {
