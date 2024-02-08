@@ -4,10 +4,26 @@
 		display: flex;
 		gap: 30px;
 
+		margin-top: 100px;
 		margin-bottom: 120px;
 	
+		@media screen and (max-width: 1200px) {
+			flex-wrap: wrap;
+		}
+
 		&__item {
 			width: 33.333%;
+
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+			}
+
+			@media screen and (max-width: 768px) {
+				flex-wrap: wrap;
+				margin: 20px 0 50px;
+			}
 		}
 
 		&__details {
@@ -15,6 +31,11 @@
 			gap: 25px;
 			margin-bottom: 25px;
 			align-items: center;
+
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				justify-content: center;
+			}
 		}
 
 		&__photo {
@@ -50,6 +71,24 @@
 		&__slider {
 			display: flex;
 			gap: 30px;
+
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+
+			@media screen and (max-width: 375px) {
+				gap: 10px;
+			}
+
+			@media screen and (max-width: 330px) {
+				gap: 5px;
+			}
+		}
+
+		&__details {
+			display: flex;
 		}
 
 		&__slide {
